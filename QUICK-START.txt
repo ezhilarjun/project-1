@@ -1,0 +1,17 @@
+MARUDHAM WEBSITE - QUICK START (WINDOWS + VS CODE)
+
+1. Install JDK 17+ and Apache Maven.
+2. Start MySQL in XAMPP or start your MySQL service.
+3. Open phpMyAdmin at http://localhost/phpmyadmin and run database.sql.
+4. If needed, edit src/main/resources/application.properties and set your MySQL password.
+5. Double-click RUN-WEBSITE-WINDOWS.bat OR open this folder in VS Code and run:
+      mvn spring-boot:run
+6. Keep the terminal/window open and visit http://localhost:8080.
+
+If the browser cannot connect, the Java server probably did not start. Read the terminal error.
+This package needs internet on its first Maven run to download dependencies.
+
+The current web version provides dashboard, collection points, waste-level updates,
+collection requests, request completion, and MySQL persistence. The original console
+route-planning/vehicle-allocation logic is preserved in original-console-src but is not
+yet wired into the web UI.
